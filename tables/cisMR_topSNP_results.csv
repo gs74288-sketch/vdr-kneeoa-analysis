@@ -1,0 +1,2 @@
+id.exposure,id.outcome,outcome,exposure,method,nsnp,b,se,pval,lo_ci,up_ci,or,or_lci95,or_uci95
+VDR_cis,knee_OA,Knee osteoarthritis,VDR expression (cis),Wald ratio,1,-0.040831018680191,0.0499642728586548,0.413811684987041,-0.138760993483155,0.0570989561227724,0.95999133684555,0.870436043485678,1.05876057605336
