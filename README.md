@@ -1,4 +1,4 @@
-# VDR – knee osteoarthritis: analysis code
+﻿# VDR 鈥?knee osteoarthritis: analysis code
 
 Code and summary tables supporting the manuscript *"Nominal genetic prioritization of vitamin D
 receptor marks a donor-adjusted regulatory chondrocyte state in osteoarthritis"* (revision).
@@ -14,23 +14,24 @@ receptor marks a donor-adjusted regulatory chondrocyte state in osteoarthritis"*
 
 ## Analysis steps
 
-1. **Target-focused MR screen + BH-FDR** — `coloc_steiger_final.R`, `cis_mr_and_recoloc.R`
-2. **Colocalization** (`coloc::coloc.abf`) over chr12:46.8–48.9 Mb (GRCh37), 6,988 harmonised SNPs — `coloc_steiger_final.R`
-3. **Steiger directionality** (binary outcome corrected with `get_r_from_lor`) — `steiger_only.R`
-4. **Cis-restricted MR sensitivity** (distance clumping; OpenGWAS LD-clumping endpoint was unavailable) — `cis_mr_local.R`
-5. **Independent scRNA-seq replication** — `replicate_GSE152805.R` + `gse152805_analysis.R`
-6. OpenGWAS API helpers — `fetch_region.py`, `fetch_opengwas.py`
+1. **Target-focused MR screen + BH-FDR** 鈥?`coloc_steiger_final.R`, `cis_mr_and_recoloc.R`
+2. **Colocalization** (`coloc::coloc.abf`) over chr12:46.8鈥?8.9 Mb (GRCh37), 6,988 harmonised SNPs 鈥?`coloc_steiger_final.R`
+3. **Steiger directionality** (binary outcome corrected with `get_r_from_lor`) 鈥?`steiger_only.R`
+4. **Cis-restricted MR sensitivity** (distance clumping; OpenGWAS LD-clumping endpoint was unavailable) 鈥?`cis_mr_local.R`
+5. **Independent scRNA-seq replication** 鈥?`replicate_GSE152805.R` + `gse152805_analysis.R`
+6. OpenGWAS API helpers 鈥?`fetch_region.py`, `fetch_opengwas.py`
 
 R 4.4.3; TwoSampleMR, coloc, Seurat 5, ieugwasr, data.table.
 
 ## Key results
 
-- **Colocalization** (VDR eQTL vs knee OA): PP.H3 = 0.971, PP.H4 = 1.9 × 10⁻⁴ (no shared causal variant).
-- **Steiger**: correct causal direction = TRUE; P = 2.7 × 10⁻¹⁴⁵ (snp_r2 exposure 0.025 vs outcome 1.1 × 10⁻⁴).
+- **Colocalization** (VDR eQTL vs knee OA): PP.H3 = 0.971, PP.H4 = 1.9 脳 10鈦烩伌 (no shared causal variant).
+- **Steiger**: correct causal direction = TRUE; P = 2.7 脳 10鈦宦光伌鈦?(snp_r2 exposure 0.025 vs outcome 1.1 脳 10鈦烩伌).
 - **Cis-restricted MR** (distance-clumped): IVW OR = 0.876 (100 kb), OR = 0.859 (10 kb); top cis SNP
-  rs7975232 alone not significant (OR 0.960, P = 0.41). LD clumping not applied — estimates anticonservative.
+  rs7975232 alone not significant (OR 0.960, P = 0.41). LD clumping not applied 鈥?estimates anticonservative.
 - **Independent replication (GSE152805)**: VDR detection did **not** replicate enrichment in homeostatic
   chondrocytes (HTC 6.9% > FC 5.3% > HomC 4.9% > EC 4.4%; Fisher OR 1.01, P = 0.94; donor/depth-adjusted
   OR 0.91, P = 0.20).
 
 `tables/` contains the summary outputs; `scripts/` the code.
+
