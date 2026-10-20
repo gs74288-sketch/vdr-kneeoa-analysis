@@ -25,7 +25,7 @@ R 4.4.3; TwoSampleMR, coloc, Seurat 5, ieugwasr, data.table.
 ## Key results
 
 - **Colocalization** (VDR eQTL vs knee OA): PP.H3 = 0.971, PP.H4 = 1.9 × 10⁻⁴ (no shared causal variant).
-- **Steiger**: correct causal direction = TRUE; P = 2.7 × 10⁻¹⁴ (snp_r2 exposure 0.025 vs outcome 1.1 × 10⁻⁴).
+- - **Steiger**: correct causal direction = TRUE; P = 2.7 × 10⁻¹⁴⁵ (snp_r2 exposure 0.025 vs outcome 1.1 × 10⁻⁴).
 - **Cis-restricted MR** (distance-clumped): IVW OR = 0.876 (100 kb), OR = 0.859 (10 kb); top cis SNP rs7975232 alone not significant (OR 0.960, P = 0.41). LD clumping not applied — estimates anticonservative.
 - **Independent replication (GSE152805)**: VDR detection did **not** replicate enrichment in homeostatic chondrocytes (HTC 6.9% > FC 5.3% > HomC 4.9% > EC 4.4%; Fisher OR 1.01, P = 0.94; donor/depth-adjusted OR 0.91, P = 0.20).
 
