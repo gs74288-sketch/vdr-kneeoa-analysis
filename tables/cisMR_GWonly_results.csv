@@ -1,0 +1,3 @@
+id.exposure,id.outcome,outcome,exposure,method,nsnp,b,se,pval,lo_ci,up_ci,or,or_lci95,or_uci95
+VDR_cis_GWonly,GCST007090,Knee OA (discovery),"VDR expression (cis, LD-clumped, genome-wide significant)",Inverse variance weighted (random effects),3,-0.0855193476961931,0.0565749231981516,0.130632530129737,-0.19640619716457,0.025367501772184,0.918035381012686,0.821678403444459,1.02569199489503
+VDR_cis_GWonly,GCST007090,Knee OA (discovery),"VDR expression (cis, LD-clumped, genome-wide significant)",Inverse variance weighted (fixed effect),3,-0.0855193476961931,0.0356361855166578,0.0164044974577723,-0.155366271308842,-0.0156724240835439,0.918035381012686,0.85610155461468,0.984449749271201

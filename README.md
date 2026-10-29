@@ -17,15 +17,20 @@ Code and summary tables supporting the manuscript *"The vitamin D receptor in kn
 2. **Colocalisation** (`coloc::coloc.abf`) over chr12:46.8-48.9 Mb (GRCh37), 6,988 harmonised SNPs — `coloc_steiger_final.R`
 3. **Steiger directionality** (binary outcome corrected with `get_r_from_lor`) — `steiger_only.R`
 4. **Primary cis-restricted MR, LD-clumped** against the 1000 Genomes European reference panel (`r2 < 0.001`) using LDlink/LDlinkR — `cis_mr_local.R`
-5. **Cis-restricted sensitivity with distance clumping** (the OpenGWAS LD-clumping endpoint was unavailable at the time) — `cis_mr_local.R`
-6. **Independent scRNA-seq replication** — `replicate_GSE152805.R` + `gse152805_analysis.R`
-7. OpenGWAS API helpers — `fetch_region.py`, `fetch_opengwas.py`
+5. **Sensitivity analysis restricted to genome-wide significant variants** (P < 5e-8) — `cis_mr_GWonly.R`
+6. **Cis-restricted sensitivity with distance clumping** (the OpenGWAS LD-clumping endpoint was unavailable at the time) — `cis_mr_local.R`
+7. **Independent scRNA-seq replication** — `replicate_GSE152805.R` + `gse152805_analysis.R`
+8. OpenGWAS API helpers — `fetch_region.py`, `fetch_opengwas.py`
 
 R 4.4.3; TwoSampleMR, coloc, Seurat 5, ieugwasr, data.table.
 
 ## Key results
 
 - **Primary cis-restricted MR** (LD-clumped, 4 instruments; 3 reach genome-wide significance): IVW OR = 0.915 (95% CI 0.831-1.007), P = 0.069; weighted median OR = 0.913, P = 0.036; no heterogeneity (Cochran Q P = 0.12) or directional pleiotropy (intercept P = 0.37). The single strongest cis variant, rs7975232, analysed alone: OR = 0.960 (0.870-1.059), P = 0.414.
+- **Sensitivity: genome-wide significant variants only** (3 of the 4 LD-clumped variants). The point estimate is unchanged (OR = 0.918), but the confidence interval depends on how heterogeneity is treated:
+  - random effects: OR = 0.918 (95% CI 0.822-1.026), P = 0.13
+  - fixed effect: OR = 0.918 (95% CI 0.856-0.984), P = 0.016
+  Cochran Q = 5.04 on 2 df (P = 0.080); the heterogeneity penalty raises the standard error by a factor of 1.59. The random-effects interval is reported as the primary result because it is the more conservative of the two.
 - **Cis-restricted distance-clumped sensitivity**: IVW OR = 0.876 (100 kb) and OR = 0.859 (10 kb). Reported for transparency; distance clumping does not account for linkage disequilibrium between retained variants, so these estimates are anticonservative and are not the primary result.
 - **Colocalisation** (VDR eQTL vs knee OA): PP.H3 = 0.971, PP.H4 = 1.9 × 10^-4 (no shared causal variant).
 - **Steiger**: correct causal direction = TRUE; P = 2.7 × 10^-145 (snp_r2 exposure 0.025 vs outcome 1.1 × 10^-4).
