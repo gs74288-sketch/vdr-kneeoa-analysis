@@ -1,0 +1,149 @@
+{
+  "by_state": [
+    {
+      "state": "RepC",
+      "n": 2583,
+      "detected": 533,
+      "mean_total": 8444.525358110724,
+      "frac": 0.20634920634920634
+    },
+    {
+      "state": "RegC",
+      "n": 16905,
+      "detected": 3194,
+      "mean_total": 8316.729724933452,
+      "frac": 0.18893818396923986
+    },
+    {
+      "state": "FC",
+      "n": 4563,
+      "detected": 822,
+      "mean_total": 8429.379136532983,
+      "frac": 0.18014464168310323
+    },
+    {
+      "state": "PreFC",
+      "n": 613,
+      "detected": 100,
+      "mean_total": 8335.125611745514,
+      "frac": 0.1631321370309951
+    },
+    {
+      "state": "preHTC",
+      "n": 12843,
+      "detected": 1898,
+      "mean_total": 7839.593475044771,
+      "frac": 0.1477847854862571
+    },
+    {
+      "state": "MTC",
+      "n": 4201,
+      "detected": 620,
+      "mean_total": 8318.594382289932,
+      "frac": 0.1475839085931921
+    },
+    {
+      "state": "CPC",
+      "n": 2640,
+      "detected": 353,
+      "mean_total": 8345.330303030303,
+      "frac": 0.1337121212121212
+    }
+  ],
+  "contrasts": [
+    {
+      "label": "RegC vs all other states",
+      "n_reg": 16905,
+      "frac_reg": 0.18893818396923986,
+      "n_other": 27443,
+      "frac_other": 0.15763582698684547,
+      "OR": 1.2448319856028074,
+      "P": 2.1463281169111015e-17
+    },
+    {
+      "label": "RegC+RepC vs all others",
+      "n_reg": 19488,
+      "frac_reg": 0.19124589490968802,
+      "n_other": 24860,
+      "frac_other": 0.15257441673370878,
+      "OR": 1.3133953557818825,
+      "P": 7.288005386233177e-27
+    },
+    {
+      "label": "RegC/HomC vs all others",
+      "n_reg": 16905,
+      "frac_reg": 0.18893818396923986,
+      "n_other": 27443,
+      "frac_other": 0.15763582698684547,
+      "OR": 1.2448319856028074,
+      "P": 2.1463281169111015e-17
+    }
+  ],
+  "logistic": {
+    "term": "RegC",
+    "beta": 0.118851221584207,
+    "se": 0.026291330872425397,
+    "z": 4.520547938821131,
+    "p": 6.16797752011042e-06,
+    "OR": 1.1262023512218036,
+    "ci_low": 1.069637935393665,
+    "ci_high": 1.1857579971027554
+  },
+  "per_donor": [
+    {
+      "sample": "HC1",
+      "group": "HC",
+      "reg_n": 2634,
+      "reg_frac": 0.1921,
+      "other_n": 4779,
+      "other_frac": 0.154,
+      "delta": 0.0381
+    },
+    {
+      "sample": "HC2",
+      "group": "HC",
+      "reg_n": 3296,
+      "reg_frac": 0.1499,
+      "other_n": 5747,
+      "other_frac": 0.1291,
+      "delta": 0.0208
+    },
+    {
+      "sample": "HC3",
+      "group": "HC",
+      "reg_n": 2596,
+      "reg_frac": 0.1737,
+      "other_n": 4244,
+      "other_frac": 0.1661,
+      "delta": 0.0076
+    },
+    {
+      "sample": "OA1",
+      "group": "OA",
+      "reg_n": 2727,
+      "reg_frac": 0.2032,
+      "other_n": 4053,
+      "other_frac": 0.1762,
+      "delta": 0.027
+    },
+    {
+      "sample": "OA2",
+      "group": "OA",
+      "reg_n": 3218,
+      "reg_frac": 0.2418,
+      "other_n": 5100,
+      "other_frac": 0.2041,
+      "delta": 0.0376
+    },
+    {
+      "sample": "OA3",
+      "group": "OA",
+      "reg_n": 2434,
+      "reg_frac": 0.1689,
+      "other_n": 3520,
+      "other_frac": 0.1102,
+      "delta": 0.0586
+    }
+  ],
+  "donors_positive": 6
+}
