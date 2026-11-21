@@ -24,8 +24,9 @@ fit <- function(dd, tag) {
   cat(sprintf("%-34s n=%5d  H3=%.4f  H4=%.3e  nGW=%d\n",
               tag, r[["nsnps"]], r[["PP.H3.abf"]], r[["PP.H4.abf"]],
               sum(dd$p2 < 5e-8)))
-  data.frame(window = tag, nsnps = r[["nsnps"]], PP.H3 = r[["PP.H3.abf"]],
-             PP.H4 = r[["PP.H4.abf"]])
+  data.frame(window = tag, nsnps = r[["nsnps"]],
+             H0 = r[["PP.H0.abf"]], H1 = r[["PP.H1.abf"]], H2 = r[["PP.H2.abf"]],
+             PP.H3 = r[["PP.H3.abf"]], PP.H4 = r[["PP.H4.abf"]])
 }
 
 rows <- list()
