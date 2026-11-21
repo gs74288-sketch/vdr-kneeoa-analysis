@@ -1,0 +1,6 @@
+running max iterations: 500
+WARNING: XtX is not symmetric; forcing XtX to be symmetric by replacing XtX with (XtX + t(XtX))/2
+	converged: TRUE
+running max iterations: 500
+WARNING: XtX is not symmetric; forcing XtX to be symmetric by replacing XtX with (XtX + t(XtX))/2
+	converged: TRUE

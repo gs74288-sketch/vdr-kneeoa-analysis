@@ -1,0 +1,64 @@
+variants: 62  LD: 62x62 
+max |r| off-diagonal: 0.796 
+PP.H0.abf PP.H1.abf PP.H2.abf PP.H3.abf PP.H4.abf 
+ 9.88e-44  8.86e-06  1.11e-38  9.97e-01  2.64e-03 
+[1] "PP abf for shared variant: 0.264%"
+
+coloc.abf (pruned set):
+    nsnps PP.H0.abf PP.H1.abf PP.H2.abf PP.H3.abf PP.H4.abf 
+62.000000  0.000000  0.000009  0.000000  0.997354  0.002637 
+
+eQTL converged: TRUE  iterations: 66  CS: 10 
+OA   converged: TRUE  iterations: 7  CS: 3 
+
+--- eQTL credible sets ---
+  CS1 n= 1 purity=1.000 lead=rs10875727   pip=1.000
+  CS2 n= 1 purity=1.000 lead=rs28594309   pip=1.000
+  CS3 n= 1 purity=1.000 lead=rs184152340  pip=1.000
+  CS4 n= 1 purity=1.000 lead=rs78899766   pip=0.975
+  CS5 n= 1 purity=1.000 lead=rs55921916   pip=1.000
+  CS6 n= 1 purity=1.000 lead=rs138284922  pip=1.000
+  CS7 n= 1 purity=1.000 lead=rs11168374   pip=1.000
+  CS8 n= 1 purity=1.000 lead=rs1635554    pip=1.000
+  CS9 n= 1 purity=1.000 lead=rs12368284   pip=0.993
+  CS10 n= 1 purity=1.000 lead=rs117783176  pip=1.000
+
+--- OA credible sets ---
+  CS1 n= 1 purity=1.000 lead=rs11168351   pip=1.000
+  CS2 n= 1 purity=1.000 lead=rs3803182    pip=0.998
+  CS3 n= 1 purity=1.000 lead=rs76903014   pip=1.000
+
+=== per-pair PP.H4 (all pairs) ===
+   idx1 idx2    PP.H4.abf
+14    4    2 6.649623e-02
+9     9    1 4.669116e-02
+28    8    3 1.645885e-02
+22    2    3 1.143038e-02
+24    4    3 9.567644e-03
+4     4    1 8.100463e-03
+1     1    1 5.530770e-03
+21    1    3 2.711558e-03
+27    7    3 1.284901e-03
+23    3    3 9.953263e-04
+26    6    3 7.970436e-04
+29    9    3 7.354573e-04
+18    8    2 6.136966e-04
+25    5    3 5.660825e-04
+30   10    3 5.058676e-04
+16    6    2 4.601281e-04
+2     2    1 2.790264e-04
+5     5    1 2.545109e-04
+6     6    1 1.860487e-04
+10   10    1 7.647777e-05
+8     8    1 7.081368e-05
+19    9    2 4.653106e-05
+3     3    1 4.091833e-05
+7     7    1 4.028465e-05
+12    2    2 4.658461e-06
+17    7    2 4.443040e-06
+20   10    2 2.062374e-06
+11    1    2 2.241380e-07
+13    3    2 4.602881e-08
+15    5    2 4.100618e-08
+
+max PP.H4 = 0.0665 ; pairs >0.5: 0 ; pairs >0.8: 0
