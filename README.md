@@ -1,6 +1,6 @@
 # VDR and knee osteoarthritis: analysis code
 
-Code and summary tables supporting the manuscript *"No shared causal variant for vitamin D receptor expression and knee osteoarthritis: a triangulation of colocalisation, population and cartilage evidence"*.
+Code and summary tables supporting the manuscript *"No evidence of a shared causal variant for vitamin D receptor expression and knee osteoarthritis: a triangulation of colocalisation, population and cartilage evidence"*.
 
 ## Data sources (all public)
 
